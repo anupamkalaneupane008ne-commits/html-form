@@ -1,2 +1,37 @@
-# html-form
-form
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <body>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="Name" required><br>
+            <label for="Age">Age:</label>
+            <input type="number" id="Age" name="Age" required><br>
+            <label for="fatherName">Father's Name:</label>
+            <input type="text" id="fatherName" name="FatherName" required><br>
+            <label for="motherName">Mother's Name:</label>
+            <input type="text" id="motherName" name="MotherName" required><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="Gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="Gender" id="female" value="female">
+            <label for="female">Female</label>
+            <input type="radio" name="Gender" id="other" value="other">
+            <label for="other">Other</label><br>
+            <label for="hobbies">Hobbies:</label>
+            <input type="text" id="hobbies" name="Hobbies"><br>
+            <label for="playingFootball">Playing football</label>
+            <input type="checkbox" id="playingFootball" name="PlayingFootball"><br>
+            <label for="readingBooks">Reading Books</label>
+            <input type="checkbox" id="readingBooks" name="ReadingBooks"><br>
+            <label for="playingGames">Playing games</label>
+            <input type="checkbox" id="playingGames" name="PlayingGames"><br>
+            <label for="studying">Studying</label>
+            <input type="checkbox" id="studying" name="Studying"><br>
+            <label for="allOfTheAbove">All of the above</label>
+            <input type="checkbox" id="allOfTheAbove" name="AllOfTheAbove"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
