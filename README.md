@@ -1,37 +1,136 @@
-<html>
-    <head>
-        <title>Form</title>
-    </head>
-    <body>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="Name" required><br>
-            <label for="Age">Age:</label>
-            <input type="number" id="Age" name="Age" required><br>
-            <label for="fatherName">Father's Name:</label>
-            <input type="text" id="fatherName" name="FatherName" required><br>
-            <label for="motherName">Mother's Name:</label>
-            <input type="text" id="motherName" name="MotherName" required><br>
-            <label for="gender">Gender:</label>
-            <input type="radio" name="Gender" id="male" value="male">
-            <label for="male">Male</label>
-            <input type="radio" name="Gender" id="female" value="female">
-            <label for="female">Female</label>
-            <input type="radio" name="Gender" id="other" value="other">
-            <label for="other">Other</label><br>
-            <label for="hobbies">Hobbies:</label>
-            <input type="text" id="hobbies" name="Hobbies"><br>
-            <label for="playingFootball">Playing football</label>
-            <input type="checkbox" id="playingFootball" name="PlayingFootball"><br>
-            <label for="readingBooks">Reading Books</label>
-            <input type="checkbox" id="readingBooks" name="ReadingBooks"><br>
-            <label for="playingGames">Playing games</label>
-            <input type="checkbox" id="playingGames" name="PlayingGames"><br>
-            <label for="studying">Studying</label>
-            <input type="checkbox" id="studying" name="Studying"><br>
-            <label for="allOfTheAbove">All of the above</label>
-            <input type="checkbox" id="allOfTheAbove" name="AllOfTheAbove"><br>
-            <input type="submit" value="Submit">
-        </form>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EDV Form - Sharma Photo</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1e2a38;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 30px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333333;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    form input, form select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    form button {
+      background-color: #1e2a38;
+      color: #ffffff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    form button:hover {
+      background-color: #33465c;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #888888;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 10px;
+        padding: 20px;
+      }
+
+      header h1 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sharma Photo - EDV Form</h1>
+  </header>
+
+  <div class="container">
+    <h2>EDV Application Form</h2>
+    <form action="#" method="POST">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" placeholder="First Middle Last" required />
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" required />
+
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender" required>
+        <option value="">--Select--</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="birthplace">Place of Birth</label>
+      <input type="text" id="birthplace" name="birthplace" required />
+
+      <label for="country">Country of Eligibility</label>
+      <input type="text" id="country" name="country" required />
+
+      <label for="passport">Passport Number</label>
+      <input type="text" id="passport" name="passport" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="photo">Upload Passport Size Photo</label>
+      <input type="file" id="photo" name="photo" accept="image/*" required />
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 Sharma Photo. All rights reserved.
+  </footer>
+</body>
 </html>
